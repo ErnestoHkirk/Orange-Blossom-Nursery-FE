@@ -1,10 +1,16 @@
+import React from 'react';
+import Header from './components/Header/header';
 import './App.css';
+
 
 function App() {
   return (
-    <main>
-      <h1>Orange Blossom Nusery</h1>
-    </main>
+    <React.Fragment>
+      <Header/>
+      <main>
+        <h1>Orange Blossom Nusery</h1>
+      </main>
+    </React.Fragment>
   );
 }
 
