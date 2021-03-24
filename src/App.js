@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header/header';
 import './App.css';
+import Home from './Routes/home';
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <React.Fragment>
       <Header/>
       <main>
-        <h1>Orange Blossom Nusery</h1>
+        <Home/>
       </main>
     </React.Fragment>
   );

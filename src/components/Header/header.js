@@ -1,9 +1,10 @@
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import "./header.css";
 
 function Header(){
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="#home">Orange Blossom Nursery</Navbar.Brand>
+        <Navbar collapseOnSelect expand="lg" bg="light"  variant="light">
+            <Navbar.Brand href="#home" >Orange Blossom Nursery</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
