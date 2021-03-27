@@ -3,7 +3,7 @@ section.masterHeader {
     padding-bottom: 6rem;
     text-align: center;
     color: #fff;
-    background-image: url("../assets/orange-tulip.png");
+    background-image: url("../../assets//orange-tulip-field-1.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -16,7 +16,7 @@ section.masterHeader {
     }
 }
 section.masterHeader .masterHeader-subheading {
-    font-size: 1rem;
+    font-size: 1.2em;
     font-style: italic;
     line-height: 1rem;
     margin-bottom: 25px;

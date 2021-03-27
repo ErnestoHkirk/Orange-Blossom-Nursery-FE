@@ -1,7 +1,7 @@
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import "./header.css";
+import "./navigation.css";
 
-function Header(){
+function navigation(){
     return (
         <Navbar collapseOnSelect expand="lg" bg="light"  variant="light">
             <Navbar.Brand href="#home" >Orange Blossom Nursery</Navbar.Brand>
@@ -24,4 +24,4 @@ function Header(){
     );
 }
 
-export default Header;
+export default navigation;

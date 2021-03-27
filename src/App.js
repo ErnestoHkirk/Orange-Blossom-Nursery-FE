@@ -1,13 +1,12 @@
 import React from 'react';
-import Header from './components/Header/header';
+import Navigation from './components/Navigation/navigation';
 import './App.css';
 import Home from './Routes/home';
-
 
 function App() {
   return (
     <React.Fragment>
-      <Header/>
+      <Navigation/>
       <main>
         <Home/>
       </main>
