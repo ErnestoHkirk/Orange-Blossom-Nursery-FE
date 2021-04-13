@@ -1,10 +1,11 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Navigation from './components/Navigation/navigation';
-import Home from './Routes/home';
-import Login from './Routes/login';
-import Register from './Routes/register';
-import Dashboard from './Routes/dashboard';
+import Navigation from '../Navigation/navigation';
+import Home from '../../routes/home';
+import Login from '../../routes/login';
+import Register from '../../routes/register';
+import Dashboard from '../../routes/dashboard';
+import CustomerOrder from '../../routes/customer-order';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path={"/login"} component={Login}/>
           <Route path={"/register"} component={Register}/>
           <Route path={"/dashboard"} component={Dashboard}/>
+          <Route path={"/customerOrder"} component={CustomerOrder}/>
         </Switch>
       </main>
     </React.Fragment>
