@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import CustomerForm from '../components/Form/CustomerForm';
 
 export default function CustomerOrder() {

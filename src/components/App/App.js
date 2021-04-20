@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Navigation from '../Navigation/navigation';
-import Home from '../../routes/home';
-import Login from '../../routes/login';
-import Register from '../../routes/register';
-import Dashboard from '../../routes/dashboard';
-import CustomerOrder from '../../routes/customer-order';
-import Statement from '../../routes/statement';
+import Home from '../../Routes/home';
+import Login from '../../Routes/login';
+import Register from '../../Routes/register';
+import Dashboard from '../../Routes/dashboard';
+import CustomerOrder from '../../Routes/customer-order';
+import Statement from '../../Routes/statement';
 import './App.css';
 
 function App() {

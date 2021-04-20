@@ -13,4 +13,7 @@ function Home () {
     )
 }
 
-export default Home;
+export default Home; 
+
+//rce for components
+//rfc for functions
