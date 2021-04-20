@@ -8,7 +8,7 @@ export default function dashboard() {
             <Link to="/">Vendor Order</Link>
             <Link to="/">Delivery Form</Link>
             <Link to="/">Pending Order</Link>
-            <Link to="/">Statment</Link>
+            <Link to="/">Statement</Link>
         </div>
     )
 }

@@ -6,6 +6,7 @@ import Login from '../../routes/login';
 import Register from '../../routes/register';
 import Dashboard from '../../routes/dashboard';
 import CustomerOrder from '../../routes/customer-order';
+import Statement from '../../routes/statement';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path={"/register"} component={Register}/>
           <Route path={"/dashboard"} component={Dashboard}/>
           <Route path={"/customerOrder"} component={CustomerOrder}/>
+          <Route path={"/statement"} component={Statement}/>
         </Switch>
       </main>
     </React.Fragment>
