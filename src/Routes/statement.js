@@ -1,20 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react';
+import StatementForm from '../components/Statement/StatementForm';
 
-export class Statment extends Component {
-    render() {
-        return (
-            <React.Fragment>
-            <div>
-                select customer
-            </div>
-            <div>
-                List of orders from customer
-                click update with modal popup.
-                
-            </div>
-            </React.Fragment>
-        )
-    }
+export default function CustomerStatement() {
+    return (
+        <section class="section" id="section--statement">
+            <StatementForm/>
+       </section>
+    )
 }
-
-export default Statment
