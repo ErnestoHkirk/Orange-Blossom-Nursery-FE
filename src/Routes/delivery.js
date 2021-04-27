@@ -1,17 +1,13 @@
-import React, { Component } from 'react'
+// import React, { Component } from 'react'
+import React, {Component} from 'react';
+import DeliveryForm from '../components/Delivery/DeliveryForm';
 
 export class Delivery extends Component {
     render() {
         return (
-            <div>
-                <form>
-                    List of unconfirmed delivery dates
-                    then select one you want to update.
-                    <div>delivery input</div>
-                
-                </form>
-            
-            </div>
+            <section class="section" id="section--customer">
+                    <DeliveryForm/>
+            </section>
         )
     }
 }

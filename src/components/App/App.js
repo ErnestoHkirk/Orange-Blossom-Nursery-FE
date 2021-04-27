@@ -7,6 +7,7 @@ import Register from '../../Routes/register';
 import Dashboard from '../../Routes/dashboard';
 import CustomerOrder from '../../Routes/customer-order';
 import Statement from '../../Routes/statement';
+import Vendor from '../../Routes/vender-order';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path={"/dashboard"} component={Dashboard}/>
           <Route path={"/customerOrder"} component={CustomerOrder}/>
           <Route path={"/statement"} component={Statement}/>
+          <Route path={"/vendor"} component={Vendor}/>
         </Switch>
       </main>
     </React.Fragment>

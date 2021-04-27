@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './CustomerForm.css';
+import './DeliveryForm.css';
 
 export class CustomerForm extends Component {
     handleNewClient=()=>{
@@ -291,20 +291,20 @@ export class CustomerForm extends Component {
                     className="Statement"
                     onSubmit={this.handleAddStatementSubmit}
                 >
-                    <div class="Statment">
-                        <h2 class="Statment__Input">Statement:</h2>
+                    <div class="deliveryInfo">
+                        <h2 class="order__nameInput">Statement:</h2>
                     </div>
-                    <div className="statementName">
-                        <label htmlFor="statmentclientName"> Client Name: </label>
+                    <div className="deliveryAddress">
+                        <label htmlFor="deliveryAddress">Delivery address: </label>
                         <input
                             type="text"
-                            name="name"
-                            className="name"
+                            name="address"
+                            className="address"
                             required
                         />
                     </div>
                     <div className="deliveryDate">
-                        <label htmlFor="deliverydate">Client: </label>
+                        <label htmlFor="deliverydate">Delivery date: </label>
                         <input
                             type="text"
                             name="ddate"
