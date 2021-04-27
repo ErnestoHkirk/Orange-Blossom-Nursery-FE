@@ -1,23 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react';
+import VendorForm from '../components/Vendor/VendorForm';
 
-export class VenderOrder extends Component {
-    render() {
-        return (
-            <div>
-                <form>
-                  <div>
-                      select Customer or add
-                  </div>
-                  <div>
-                      select plant item from vendor or add
-                  </div>
-                  <div>
-                      display list
-                  </div>
-                </form>
-            </div>
-        )
-    }
+export default function Vendor() {
+    return (
+        <section class="section" id="section--order">
+            <VendorForm/>
+       </section>
+    )
 }
 
-export default VenderOrder
