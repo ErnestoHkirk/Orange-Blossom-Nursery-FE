@@ -16,10 +16,10 @@ export class CustomerForm extends Component {
         return (
             <React.Fragment>
                 <form class="order__form">
-                    <div class="order__employee">
+                    {/* <div class="order__employee">
                         <h2 class="order__nameInput">Employee: <span>Name</span></h2>
                         <h2 class="order__nameInput">Create New Order</h2>
-                    </div>
+                    </div> */}
                     <div >
                         <label for="client">Select Client: </label>
                         <select name="client" id="client">
@@ -40,21 +40,21 @@ export class CustomerForm extends Component {
                         </div>
                     </div>
                     <div>
-                    <label for="plant">Select Plant: </label>
+                    {/* <label for="plant">Select Plant: </label>
                         <select name="plant" id="plant">
                             <option value="">Rosemary</option>
                             <option value="">plant1</option>
                             <option value="">plant2</option>
                             <option value="">plant3</option>
-                        </select>
+                        </select> */}
                         <button onClick={()=> this.handleNewPlant()}>New Plant</button>
-                        <div>
+                        {/* <div>
                             <h4>Plant Name:</h4>
                             <h4>Grow Time:</h4>
                             <h4>Description:</h4>
-                            <h4>Price:</h4>
+                            <h4>Price:</h4> */}
                             {/* <button>add plant</button>  */}                        
-                        </div>
+                        {/* </div> */}
                         {/* 
                         <div>
                             <div>Current Order</div>

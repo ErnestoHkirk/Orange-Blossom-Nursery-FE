@@ -13,10 +13,10 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <EmployeeProvider>
-      <VendorProvider>
-            <PlantProvider>
-        <App />
-        </PlantProvider>
+        <VendorProvider>
+          <PlantProvider>
+            < App />
+          </PlantProvider>
         </VendorProvider>
       </EmployeeProvider>
     </BrowserRouter>

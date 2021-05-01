@@ -29,18 +29,6 @@ export class PlantProvider extends Component {
     this.setState({ error: null });
   };
 
-  _createPlantData = (data) => {
-    return data.map(d => {
-      if (d["mentor_notes"] === null) {
-        d["mentor_notes"] = "mentor left no notes";
-      }
-      if (d["student_notes"] === null) {
-        d["student_notes"] = "you made no notes";
-      }
-      return d;
-    });
-  }
-
   async componentDidMount() {
     try {
       await apiService.getAllPlants().then(plants => {
@@ -51,7 +39,6 @@ export class PlantProvider extends Component {
       console.log({ error });
     }
   };
-
 
   render() {
     const value = {
