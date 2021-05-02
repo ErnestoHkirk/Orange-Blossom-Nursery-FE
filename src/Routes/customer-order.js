@@ -33,6 +33,7 @@ export class CustomerOrder extends React.Component {
         this.context.clearOrder();
         this.props.history.push("/dashboard");
     }
+ 
     render() {
         const { plants } = this.context;
         return (
