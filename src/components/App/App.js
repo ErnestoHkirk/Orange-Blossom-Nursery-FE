@@ -9,6 +9,7 @@ import CustomerOrder from '../../Routes/customer-order';
 import Statement from '../../Routes/statement';
 import Vendor from '../../Routes/vender-order';
 import Delivery from '../../Routes/delivery';
+import EmployeRoute from '../../Utils/EmployeeRoute';
 import './App.css';
 
 function App() {
@@ -20,11 +21,11 @@ function App() {
           <Route exact path={"/"} component={Home}/>
           <Route path={"/login"} component={Login}/>
           <Route path={"/register"} component={Register}/>
-          <Route path={"/dashboard"} component={Dashboard}/>
-          <Route path={"/customerOrder"} component={CustomerOrder}/>
-          <Route path={"/statement"} component={Statement}/>
-          <Route path={"/vendor"} component={Vendor}/>
-          <Route path={"/delivery"} component={Delivery}/>
+          <EmployeRoute path={"/dashboard"} component={Dashboard}/>
+          <EmployeRoute path={"/customerOrder"} component={CustomerOrder}/>
+          <EmployeRoute path={"/statement"} component={Statement}/>
+          <EmployeRoute path={"/vendor"} component={Vendor}/>
+          <EmployeRoute path={"/delivery"} component={Delivery}/>
         </Switch>
       </main>
     </React.Fragment>

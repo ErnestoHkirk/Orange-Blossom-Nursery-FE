@@ -25,14 +25,10 @@ export class navigation extends Component {
             <React.Fragment>
             <Nav className="mr-auto">
                 <NavDropdown title="Forms" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="#">Customer Order</NavDropdown.Item>
-                    <NavDropdown.Item href="#">Distributor Order</NavDropdown.Item>
-                    <NavDropdown.Item href="#">Delivery</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/customerOrder" >Customer Order</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="Reports" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="#">Pending Orders</NavDropdown.Item>
-                    <NavDropdown.Item href="#">Upcoming Deliveries</NavDropdown.Item>
-                    <NavDropdown.Item href="#">Sales</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/statement" >Statements</NavDropdown.Item>
                 </NavDropdown>
                 </Nav>
                 <Nav>

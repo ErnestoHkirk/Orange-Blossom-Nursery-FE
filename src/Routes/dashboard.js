@@ -3,13 +3,11 @@ import {Link} from 'react-router-dom';
 
 export default function dashboard() {
     return (
-        <React.Fragment>
-
-                <Link to="/">New Order</Link>
-                <Link to="/">Vendor Order</Link>
-                <Link to="/">Delivery Form</Link>
-                <Link to="/">Pending Order</Link>
-                <Link to="/">Statement</Link>
-        </React.Fragment>
+        <section class="container mt-4">
+            <div class="row justify-content-around">
+                <Link class="col-4 btn btn-outline-primary " to="/customerOrder">New Order</Link>
+                <Link class="col-4 btn btn-outline-primary " to="/statement">Statement</Link>
+            </div>
+        </section>
     )
 }

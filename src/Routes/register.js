@@ -16,7 +16,7 @@ export default class RegistrationPage extends Component {
 
   render() {
     return (
-      <section className="registrationPage row">
+      <section className="container mt-4">
         <RegistrationForm
           onRegistrationSuccess={this.handleRegistrationSuccuess}
         />

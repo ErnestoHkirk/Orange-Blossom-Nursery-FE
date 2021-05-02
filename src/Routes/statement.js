@@ -1,10 +1,12 @@
 import React from 'react';
-import StatementForm from '../components/Statement/StatementForm';
+import StatementDisplay from '../components/Display/statement-display';
 
-export default function CustomerStatement() {
+export default function statement() {
     return (
-        <section class="section" id="section--statement">
-            <StatementForm/>
-       </section>
+        <section class="container mt-4" id="section--statement">
+            <StatementDisplay  />
+        </section>
     )
 }
+
+

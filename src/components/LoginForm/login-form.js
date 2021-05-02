@@ -55,11 +55,11 @@ class LoginForm extends Component {
 
   renderLoginButton(){
     return (
-      <div className="loginLinks">
-        <button className="loginButton" type="submit">
+      <div className="mt-2 mb-2 ml-auto">
+        <button className="btn btn-primary" type="submit">
            Login
         </button>
-        <Link to='/register' >Register</Link>
+        <Link class="ml-3"to='/register' >Register</Link>
       </div>
     )
   }
@@ -67,9 +67,9 @@ class LoginForm extends Component {
   render() {
     const { error } = this.state;
     return (
-      <form className="LoginForm col-4" onSubmit={this.handleSubmit}>
+      <form className="form-group col-4 mx-auto" onSubmit={this.handleSubmit}>
         <div className="loginContainer">
-          <h2 className="loginTitle">Login</h2>
+          <h2 className="text-center mt-2">Login</h2>
           <div className="loginInput">
             <div className="usernameInput">
               <Label htmlFor="login-username-input" className="username-login">Username : </Label>

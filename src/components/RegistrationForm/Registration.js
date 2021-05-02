@@ -37,23 +37,18 @@ export default class Registration extends Component {
     const { error } = this.state;
     return (
       <form
-        className="registration-form col-6"
+        className="form-group"
         onSubmit={this.handleRegistrationSubmit}
       > 
         <h2 className="registerTitle">Register</h2>
         <p className="register-text">Welcome to the Orange Blossom Team</p>
         <div className="registrationInput">
           <div className="usernameInput">
-            <label htmlFor="user_name">Username : </label>
-            <input
-              type="text"
-              name="user_name"
-              className="user_name"
-              required
-            />
+            <label htmlFor="user_name">Username : </label> <br/>
+            <input type="text" name="user_name"className="user_name"required/>
           </div>
           <div className="fullNameInput">
-            <label htmlFor="name">Name : </label>
+            <label htmlFor="name">Name : </label><br/>
             <input
               type="text"
               name="name"
@@ -62,7 +57,7 @@ export default class Registration extends Component {
             />
           </div>
           <div className="phoneInput">
-            <label htmlFor="phone">Phone : </label>
+            <label htmlFor="phone">Phone : </label><br/>
             <input
               type="text"
               name="phone"
@@ -71,7 +66,7 @@ export default class Registration extends Component {
             />
           </div>
           <div className="passwordInput">
-            <label htmlFor="password">Password : </label>
+            <label htmlFor="password">Password : </label><br/>
             <input
               type="password"
               name="password"
@@ -81,7 +76,7 @@ export default class Registration extends Component {
           </div>
           <div role="alert">{error && <p className="red">{error}</p>}</div>
           <button
-            className="registrationSubmit"
+            className="btn btn-primary mt-2 mb-2"
             type="submit"
             name="submit">
             Register
