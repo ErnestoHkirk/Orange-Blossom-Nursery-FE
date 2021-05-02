@@ -1,4 +1,7 @@
 import './team.css';
+import Robin from '../../assets/robin.jpg';
+import Hussam from '../../assets/Hussam2.png';
+import Ernesto from '../../assets/Ernesto2.png';
 
 function team (){
     return(
@@ -11,7 +14,7 @@ function team (){
             <div class="row">
                 <div class="col-lg-4">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="" alt="" />
+                        <img class="mx-auto rounded-circle" src={Robin} alt="robin" />
                         <h4>Robin Khiv</h4>
                         <p class="text-muted">Software Developer</p>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
@@ -21,7 +24,7 @@ function team (){
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="" alt="" />
+                        <img class="mx-auto rounded-circle" src={Ernesto} alt="Ernesto" />
                         <h4>Ernesto Hooghkirk</h4>
                         <p class="text-muted">Software Developer</p>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
@@ -31,7 +34,7 @@ function team (){
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="" alt="" />
+                        <img class="mx-auto rounded-circle" src={Hussam} alt="" />
                         <h4>Hussam Hassabelkarim</h4>
                         <p class="text-muted">Software Developer</p>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
@@ -41,7 +44,7 @@ function team (){
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Join the Orange Blossom Team Today!</p></div>
             </div>
         </div>
     </section>
