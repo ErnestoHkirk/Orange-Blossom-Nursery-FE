@@ -3,7 +3,8 @@ import apiService from '../services/api-service';
 
 const StatementContext = createContext({
     openStatements: [],
-    updateStatement: () => {}
+    updateStatement: () => {},
+    deleteStatement: () => {}
 })
 
 export default StatementContext;
@@ -37,10 +38,15 @@ export class StatementProvider extends Component {
         statementList.splice(updateStatementIndex, 1, findStatement)
         this.setState({openStatements: statementList});
     }
+    deleteStatement = id => {
+        const statementList = this.state.openStatements.filter(el => el.id !== id);
+        this.setState({openStatements: statementList});
+    }
     render() {
         const value = {
             openStatements: this.state.openStatements,
-            updateStatement: this.updateStatement
+            updateStatement: this.updateStatement,
+            deleteStatement: this.deleteStatement
         }
         return (
             <StatementContext.Provider value={value}>

@@ -37,7 +37,7 @@ export class PlantForm extends Component {
         this.props.addPlantOrder(id, quantity);
     }
     renderButtons = () => {
-        return (<div>
+        return (<div class="row">
             <label   className="mr-4" htmlFor="quantity">Quantity: </label>
             <input   className="mr-4" name="quantity" required/>  
             <button   className="btn btn-primary" type="submit">Add Plant</button>

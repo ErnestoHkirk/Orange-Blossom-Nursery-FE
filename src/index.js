@@ -5,7 +5,6 @@ import { EmployeeProvider } from './context/EmployeeContext';
 import { VendorProvider} from './context/VendorContext';
 import { PlantProvider} from './context/PlantContext';
 import { CustomerProvider } from './context/CustomerContext';
-import { StatementProvider} from './context/StatementContext';
 import './index.css';
 import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
@@ -15,7 +14,6 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <EmployeeProvider>
-        <StatementProvider>
           <VendorProvider>
             <CustomerProvider>
               <PlantProvider>
@@ -23,7 +21,6 @@ ReactDOM.render(
               </PlantProvider>
             </CustomerProvider>
           </VendorProvider>
-        </StatementProvider>
       </EmployeeProvider>
     </BrowserRouter>
   </React.StrictMode>,

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import StatementContext from '../../context/StatementContext';
 import UpdateClient from '../Form/UpdateStatement';
+import DeleteModal from '../Form/DeleteForm';
 
 export class StatementDisplay extends Component {
     static contextType = StatementContext;
@@ -8,7 +9,8 @@ export class StatementDisplay extends Component {
         super(props)
         const state = {
             currentClient: {},
-            updateClient: false
+            updateClient: false,
+            deleteStatement: false
         }
         this.state = state;
     }
@@ -20,8 +22,19 @@ export class StatementDisplay extends Component {
         this.context.updateStatement(id, data);
         this.setState({updateClient: false, currentClient: {}});
     }
+    handleDeletedStatement = (id) => {
+        this.context.deleteStatement(id);
+        this.setState({deleteStatement: false, currentClient: {}});
+    }
     closeModal = () => {
         this.setState({updateClient:false, currentClient: {}});
+    }
+    closeDeleteModal = () => {
+        this.setState({deleteStatement: false, currentClient:{}});
+    }
+    handleDelete = id => {
+        const copy = this.context.openStatements.filter(el => el.id === id);
+        this.setState({deleteStatement: true, currentClient: copy[0]});
     }
     render() {
         const { openStatements } = this.context;
@@ -39,12 +52,16 @@ export class StatementDisplay extends Component {
                                 <p>Amount Paid: {statement.amount_paid}</p>
                                 <p>Paid : <span>{statement.paid.toString()}</span></p>
                                 <p>Total : <span>{statement.total}</span></p>
-                                <button class="btn btn-primary mb-3"onClick={()=> this.handleUpdate(statement.id)}>Update</button>
+                                <div class="row">
+                                    <button class="btn btn-primary mb-3 mr-3 ml-3"onClick={()=> this.handleUpdate(statement.id)}>Update</button>
+                                    <button class="btn btn-outline-danger mb-3" onClick={()=> this.handleDelete(statement.id)}>Delete</button>
+                                </div>
                             </div>
                         )
                     })}
                 </div>
             {this.state.updateClient !== false && <UpdateClient data={this.state.currentClient} closeModal={this.closeModal} updatedStatement={this.handleUpdateStatement}/>}
+            {this.state.deleteStatement !== false && <DeleteModal data={this.state.currentClient} closeDeleteModal={this.closeDeleteModal} deletedStatement={this.handleDeletedStatement}/>}
             </React.Fragment>
         )
     }

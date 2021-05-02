@@ -29,8 +29,8 @@ export class UpdateStatement extends Component {
         const data = this.props.data;
         return (
             <div>
-                <form class="updateModal"onSubmit={this.handleSubmit}>
-                    <button class="btn--close-modal" onClick={this.closeModal}>&times;</button>
+                <form className="updateModal"onSubmit={this.handleSubmit}>
+                    <button className="btn--close-modal" onClick={this.closeModal}>&times;</button>
                     <h3 className="modal-title text-left">Order Number: {data.order_id}</h3>
                     <h4 className="text-left">Order Date: {data.order_date}</h4>
                     <h4 className="text-left">Amount: {data.total}</h4>
@@ -42,7 +42,7 @@ export class UpdateStatement extends Component {
                     <input type="text" name="paid" className="name" placeholder={data.paid.toString() }/><br/>
                     <button className="btn btn-primary mt-4" type="submit">Update</button>
                 </form>
-                <div class="overlay" onClick={this.closeModal}></div>
+                <div className="overlay" onClick={this.closeModal}></div>
             </div>
         )
     }

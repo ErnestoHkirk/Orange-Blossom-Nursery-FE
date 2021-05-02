@@ -24,7 +24,6 @@ export class CustomerForm extends Component {
     handleCustomerChange = e => {
         const selected = this.context.customers[e.target.value -1];
         this.setState({selectedCustomer: selected});
-        console.log(selected.id, 'iddd')
         this.props.addCustomerToOrder(selected.id)
     }
     handleNewCustomer = customer => {
