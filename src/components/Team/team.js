@@ -1,7 +1,7 @@
 import './team.css';
 import Robin from '../../assets/robin.jpg';
 import Hussam from '../../assets/Hussam2.png';
-import Ernesto from '../../assets/Ernesto2.png';
+import Ernesto from '../../assets/Ernesto.jpg';
 
 function team (){
     return(
